@@ -1,0 +1,263 @@
+From,To,Count
+Deciduous Forest,Deciduous Forest,1412
+Alfalfa,Alfalfa,862
+Corn,Corn,750
+Herbaceous Wetlands,Herbaceous Wetlands,484
+Woody Wetlands,Woody Wetlands,478
+Soybeans,Corn,471
+Deciduous Forest,Woody Wetlands,463
+Grassland/Pasture,Grassland/Pasture,456
+Woody Wetlands,Deciduous Forest,443
+Corn,Soybeans,432
+Grassland/Pasture,Deciduous Forest,382
+Other Hay/Non Alfalfa,Other Hay/Non Alfalfa,366
+Other Hay/Non Alfalfa,Alfalfa,288
+Evergreen Forest,Evergreen Forest,230
+Corn,Alfalfa,228
+Alfalfa,Corn,217
+Grassland/Pasture,Herbaceous Wetlands,207
+Herbaceous Wetlands,Deciduous Forest,157
+Other Hay/Non Alfalfa,Grassland/Pasture,157
+Deciduous Forest,Herbaceous Wetlands,154
+Herbaceous Wetlands,Woody Wetlands,147
+Grassland/Pasture,Alfalfa,143
+Deciduous Forest,Evergreen Forest,129
+Other Hay/Non Alfalfa,Corn,119
+Soybeans,Soybeans,116
+Developed/Low Intensity,Developed/Low Intensity,114
+Woody Wetlands,Herbaceous Wetlands,101
+Evergreen Forest,Deciduous Forest,101
+Grassland/Pasture,Corn,99
+Soybeans,Alfalfa,96
+Grassland/Pasture,Evergreen Forest,88
+Mixed Forest,Deciduous Forest,86
+Winter Wheat,Corn,83
+Alfalfa,Other Hay/Non Alfalfa,76
+Open Water,Open Water,70
+Grassland/Pasture,Shrubland,69
+Developed/Open Space,Developed/Open Space,67
+Mixed Forest,Evergreen Forest,66
+Herbaceous Wetlands,Open Water,61
+Grassland/Pasture,Woody Wetlands,59
+Woody Wetlands,Evergreen Forest,55
+Developed/Med Intensity,Developed/Med Intensity,55
+Deciduous Forest,Mixed Forest,55
+Grassland/Pasture,Other Hay/Non Alfalfa,49
+Corn,Fallow/Idle Cropland,48
+Mixed Forest,Mixed Forest,47
+Grassland/Pasture,Fallow/Idle Cropland,44
+Other Hay/Non Alfalfa,Deciduous Forest,38
+Deciduous Forest,Shrubland,36
+Evergreen Forest,Mixed Forest,35
+Winter Wheat,Soybeans,35
+Other Hay/Non Alfalfa,Herbaceous Wetlands,34
+Alfalfa,Fallow/Idle Cropland,33
+Evergreen Forest,Woody Wetlands,32
+Open Water,Herbaceous Wetlands,32
+Grassland/Pasture,Soybeans,31
+Winter Wheat,Alfalfa,30
+Herbaceous Wetlands,Evergreen Forest,30
+Other Hay/Non Alfalfa,Fallow/Idle Cropland,29
+Corn,Oats,29
+Shrubland,Deciduous Forest,29
+Other Hay/Non Alfalfa,Clover/Wildflowers,27
+Alfalfa,Soybeans,26
+Developed/Low Intensity,Developed/Open Space,25
+Developed/Open Space,Developed/Low Intensity,25
+Alfalfa,Grassland/Pasture,24
+Herbaceous Wetlands,Grassland/Pasture,24
+Corn,Grassland/Pasture,23
+Winter Wheat,Fallow/Idle Cropland,22
+Clover/Wildflowers,Alfalfa,22
+Deciduous Forest,Corn,22
+Deciduous Forest,Grassland/Pasture,21
+Rye,Corn,21
+Mixed Forest,Woody Wetlands,19
+Deciduous Forest,Alfalfa,19
+Evergreen Forest,Herbaceous Wetlands,18
+Herbaceous Wetlands,Shrubland,17
+Soybeans,Fallow/Idle Cropland,16
+Soybeans,Oats,16
+Oats,Corn,16
+Developed/Low Intensity,Developed/Med Intensity,16
+Corn,Deciduous Forest,16
+Corn,Other Hay/Non Alfalfa,16
+Potatoes,Corn,15
+Rye,Alfalfa,15
+Alfalfa,Deciduous Forest,14
+Corn,Winter Wheat,14
+Shrubland,Herbaceous Wetlands,14
+Alfalfa,Herbaceous Wetlands,14
+Corn,Herbaceous Wetlands,14
+Other Hay/Non Alfalfa,Soybeans,13
+Rye,Fallow/Idle Cropland,12
+Soybeans,Winter Wheat,12
+Deciduous Forest,Other Hay/Non Alfalfa,12
+Grassland/Pasture,Mixed Forest,11
+Rye,Grassland/Pasture,11
+Developed/High Intensity,Developed/High Intensity,11
+Woody Wetlands,Mixed Forest,11
+Developed/Med Intensity,Developed/Low Intensity,10
+Woody Wetlands,Grassland/Pasture,10
+Alfalfa,Clover/Wildflowers,9
+Herbaceous Wetlands,Fallow/Idle Cropland,9
+Deciduous Forest,Soybeans,9
+Corn,Potatoes,9
+Alfalfa,Potatoes,8
+Dry Beans,Corn,8
+Shrubland,Shrubland,8
+Dry Beans,Soybeans,8
+Woody Wetlands,Shrubland,8
+Sweet Corn,Corn,7
+Dry Beans,Potatoes,7
+Peas,Alfalfa,7
+Rye,Soybeans,6
+Shrubland,Evergreen Forest,6
+Dry Beans,Alfalfa,6
+Alfalfa,Sweet Corn,6
+Herbaceous Wetlands,Corn,5
+Alfalfa,Winter Wheat,5
+Open Water,Woody Wetlands,5
+Grassland/Pasture,Open Water,5
+Oats,Alfalfa,5
+Soybeans,Grassland/Pasture,5
+Potatoes,Alfalfa,5
+Peas,Corn,5
+Clover/Wildflowers,Corn,5
+Shrubland,Woody Wetlands,5
+Shrubland,Grassland/Pasture,5
+Soybeans,Other Hay/Non Alfalfa,5
+Grassland/Pasture,Dry Beans,4
+Developed/Open Space,Developed/Med Intensity,4
+Rye,Herbaceous Wetlands,4
+Corn,Developed/Open Space,4
+Shrubland,Other Hay/Non Alfalfa,4
+Soybeans,Potatoes,4
+Oats,Soybeans,4
+Grassland/Pasture,Clover/Wildflowers,4
+Potatoes,Sweet Corn,4
+Deciduous Forest,Fallow/Idle Cropland,3
+Corn,Dry Beans,3
+Soybeans,Deciduous Forest,3
+Developed/Open Space,Corn,3
+Open Water,Deciduous Forest,3
+Herbaceous Wetlands,Mixed Forest,3
+Corn,Rye,3
+Other Hay/Non Alfalfa,Shrubland,3
+Potatoes,Dry Beans,3
+Sweet Corn,Alfalfa,3
+Sweet Corn,Soybeans,3
+Soybeans,Herbaceous Wetlands,3
+Herbaceous Wetlands,Barren,3
+Potatoes,Grassland/Pasture,3
+Winter Wheat,Grassland/Pasture,3
+Open Water,Sweet Corn,2
+Soybeans,Barley,2
+Other Hay/Non Alfalfa,Oats,2
+Other Hay/Non Alfalfa,Rye,2
+Sunflower,Corn,2
+Soybeans,Developed/Open Space,2
+Winter Wheat,Winter Wheat,2
+Rye,Rye,2
+Radishes,Herbaceous Wetlands,2
+Other Hay/Non Alfalfa,Dry Beans,2
+Other Hay/Non Alfalfa,Woody Wetlands,2
+Winter Wheat,Oats,2
+Alfalfa,Dry Beans,2
+Evergreen Forest,Grassland/Pasture,2
+Clover/Wildflowers,Clover/Wildflowers,2
+Developed/Med Intensity,Alfalfa,2
+Corn,Barley,2
+Deciduous Forest,Sweet Potatoes,2
+Deciduous Forest,Open Water,2
+Dry Beans,Sweet Corn,2
+Barley,Alfalfa,2
+Developed/Med Intensity,Corn,2
+Evergreen Forest,Open Water,2
+Grassland/Pasture,Barren,2
+Developed/Med Intensity,Developed/High Intensity,2
+Herbaceous Wetlands,Alfalfa,2
+Alfalfa,Triticale,2
+Herbaceous Wetlands,Soybeans,2
+Herbaceous Wetlands,Sweet Corn,2
+Clover/Wildflowers,Other Hay/Non Alfalfa,2
+Clover/Wildflowers,Grassland/Pasture,2
+Soybeans,Triticale,1
+Christmas Trees,Herbaceous Wetlands,1
+Canola,Corn,1
+Christmas Trees,Alfalfa,1
+Soybeans,Mixed Forest,1
+Sunflower,Fallow/Idle Cropland,1
+Spring Wheat,Corn,1
+Strawberries,Alfalfa,1
+Spring Wheat,Soybeans,1
+Christmas Trees,Other Hay/Non Alfalfa,1
+Spring Wheat,Alfalfa,1
+Clover/Wildflowers,Herbaceous Wetlands,1
+Clover/Wildflowers,Deciduous Forest,1
+Open Water,Corn,1
+Barren,Shrubland,1
+Sweet Corn,Mixed Forest,1
+Winter Wheat,Sweet Corn,1
+Alfalfa,Oats,1
+Woody Wetlands,Other Hay/Non Alfalfa,1
+Alfalfa,Rye,1
+Alfalfa,Shrubland,1
+Alfalfa,Sorghum,1
+Alfalfa,Woody Wetlands,1
+Woody Wetlands,Corn,1
+Woody Wetlands,Alfalfa,1
+Barley,Grassland/Pasture,1
+Barren,Woody Wetlands,1
+Winter Wheat,Other Hay/Non Alfalfa,1
+Barren,Alfalfa,1
+Barren,Barren,1
+Barren,Grassland/Pasture,1
+Winter Wheat,Dry Beans,1
+Winter Wheat,Developed/Low Intensity,1
+Barren,Soybeans,1
+Sweet Corn,Sweet Corn,1
+Clover/Wildflowers,Soybeans,1
+Sorghum,Alfalfa,1
+Corn,Evergreen Forest,1
+Evergreen Forest,Corn,1
+Radishes,Grassland/Pasture,1
+Developed/Open Space,Deciduous Forest,1
+Developed/Open Space,Soybeans,1
+Developed/Open Space,Woody Wetlands,1
+Dry Beans,Cucumbers,1
+Dry Beans,Dry Beans,1
+Peas,Soybeans,1
+Dry Beans,Oats,1
+Grassland/Pasture,Christmas Trees,1
+Corn,Peas,1
+Grassland/Pasture,Oats,1
+Alfalfa,Barley,1
+Herbaceous Wetlands,Other Hay/Non Alfalfa,1
+Other Hay/Non Alfalfa,Cucumbers,1
+Oats,Clover/Wildflowers,1
+Oats,Deciduous Forest,1
+Other Hay/Non Alfalfa,Barley,1
+Oats,Fallow/Idle Cropland,1
+Developed/Open Space,Alfalfa,1
+Developed/Med Intensity,Soybeans,1
+Rye,Barley,1
+Rye,Clover/Wildflowers,1
+Corn,Shrubland,1
+Soybeans,Clover/Wildflowers,1
+Corn,Woody Wetlands,1
+Cranberries,Soybeans,1
+Oats,Oats,1
+Cucumbers,Corn,1
+Cucumbers,Soybeans,1
+Deciduous Forest,Clover/Wildflowers,1
+Deciduous Forest,Winter Wheat,1
+Developed/High Intensity,Developed/Low Intensity,1
+Shrubland,Alfalfa,1
+Developed/High Intensity,Developed/Med Intensity,1
+Developed/Low Intensity,Alfalfa,1
+Rye,Other Hay/Non Alfalfa,1
+Rye,Oats,1
+Developed/Low Intensity,Soybeans,1
+Rye,Deciduous Forest,1
+Grassland/Pasture,Winter Wheat,1
