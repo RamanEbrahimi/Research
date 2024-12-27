@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Explanation Section */
+#explanation {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Set a max-width to limit width */
+    margin: 20px auto;
+    text-align: left;
+}
+
+#explanation h2 {
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+#explanation p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+#explanation ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #555;
+}
+
+#weightsChart {
+    margin: 20px 0;
+    display: block;
+    max-width: 100%; /* Ensure the chart is responsive */
+}
+
+/* Form Section */
+#interaction {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Form width is narrower */
+    margin: 20px auto;
+    text-align: left;
+}
+
+#interaction h2 {
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Button Styles */
+button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+/* Result Styles */
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a90e2;
+    background: #e8f4ff;
+    padding: 10px;
+    border: 1px solid #4a90e2;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
