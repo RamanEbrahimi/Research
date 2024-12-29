@@ -1,0 +1,163 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #81d4fa;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* File input and progress bar */
+#fileInput {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px dashed #0288d1;
+    background-color: #1e1e1e;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #81d4fa;
+}
+
+#fileInput:hover {
+    background-color: #2a2a2a;
+}
+
+#progressBar {
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2a2a2a;
+    border: 1px solid #81d4fa;
+}
+
+#progressBar::-webkit-progress-value {
+    background-color: #81d4fa;
+}
+
+#progressBar::-moz-progress-bar {
+    background-color: #81d4fa;
+}
+
+/* Messages and forms */
+#message {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #81d4fa;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #81d4fa;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0288d1;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #01579b;
+}
+
+/* Data preview table */
+#preview {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed; /* Ensure consistent column widths */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #0288d1;
+    color: white;
+    font-weight: bold;
+}
+
+tbody {
+    display: block;
+    overflow-y: auto; /* Enable scrolling */
+    height: 300px; /* Limit visible rows */
+    background-color: #2a2a2a;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Match thead and tbody column widths */
+}
+
+tbody tr:hover {
+    background-color: #333333;
+}
+
+tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
