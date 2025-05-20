@@ -1,0 +1,488 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{51}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Adadi and Berrada(2018)]%
+        {peeking2018adadi}
+\bibfield{author}{\bibinfo{person}{Amina Adadi} {and} \bibinfo{person}{Mohammed Berrada}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}}  \bibinfo{volume}{6} (\bibinfo{year}{2018}), \bibinfo{pages}{52138--52160}.
+\newblock
+\href{https://doi.org/10.1109/ACCESS.2018.2870052}{doi:\nolinkurl{10.1109/ACCESS.2018.2870052}}
+
+
+\bibitem[Adebayo et~al\mbox{.}(2018)]%
+        {adebayo2018sanity}
+\bibfield{author}{\bibinfo{person}{Julius Adebayo}, \bibinfo{person}{Justin Gilmer}, \bibinfo{person}{Michael Muelly}, \bibinfo{person}{Ian Goodfellow}, \bibinfo{person}{Moritz Hardt}, {and} \bibinfo{person}{Been Kim}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Sanity checks for saliency maps}. In \bibinfo{booktitle}{\emph{Proceedings of the 32nd International Conference on Neural Information Processing Systems}} (Montr\'{e}al, Canada) \emph{(\bibinfo{series}{NIPS'18})}. \bibinfo{publisher}{Curran Associates Inc.}, \bibinfo{address}{Red Hook, NY, USA}, \bibinfo{pages}{9525–9536}.
+\newblock
+
+
+\bibitem[Ahmadi et~al\mbox{.}(2021)]%
+        {ahmadi2021strategic}
+\bibfield{author}{\bibinfo{person}{Saba Ahmadi}, \bibinfo{person}{Hedyeh Beyhaghi}, \bibinfo{person}{Avrim Blum}, {and} \bibinfo{person}{Keziah Naggita}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{The strategic perceptron}. In \bibinfo{booktitle}{\emph{Proceedings of the 22nd ACM Conference on Economics and Computation}}. \bibinfo{pages}{6--25}.
+\newblock
+
+
+\bibitem[Alhanouti and Naghizadeh(2024)]%
+        {alhanouti2024could}
+\bibfield{author}{\bibinfo{person}{Sura Alhanouti} {and} \bibinfo{person}{Parinaz Naghizadeh}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Could Anticipating Gaming Incentivize Improvement in (Fair) Startegic Classification?}
+\newblock \bibinfo{journal}{\emph{The IEEE Control and Decisions Conference (CDC)}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Ali et~al\mbox{.}(2023)]%
+        {ALI2023101805}
+\bibfield{author}{\bibinfo{person}{Sajid Ali}, \bibinfo{person}{Tamer Abuhmed}, \bibinfo{person}{Shaker El-Sappagh}, \bibinfo{person}{Khan Muhammad}, \bibinfo{person}{Jose~M. Alonso-Moral}, \bibinfo{person}{Roberto Confalonieri}, \bibinfo{person}{Riccardo Guidotti}, \bibinfo{person}{Javier {Del Ser}}, \bibinfo{person}{Natalia Díaz-Rodríguez}, {and} \bibinfo{person}{Francisco Herrera}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence}.
+\newblock \bibinfo{journal}{\emph{Information Fusion}}  \bibinfo{volume}{99} (\bibinfo{year}{2023}), \bibinfo{pages}{101805}.
+\newblock
+\showISSN{1566-2535}
+\href{https://doi.org/10.1016/j.inffus.2023.101805}{doi:\nolinkurl{10.1016/j.inffus.2023.101805}}
+
+
+\bibitem[Bechavod et~al\mbox{.}(2021)]%
+        {bechavod2021gaming}
+\bibfield{author}{\bibinfo{person}{Yahav Bechavod}, \bibinfo{person}{Katrina Ligett}, \bibinfo{person}{Steven Wu}, {and} \bibinfo{person}{Juba Ziani}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Gaming helps! learning from strategic interactions in natural dynamics}. In \bibinfo{booktitle}{\emph{International Conference on Artificial Intelligence and Statistics}}.
+\newblock
+
+
+\bibitem[Bechavod et~al\mbox{.}(2022)]%
+        {bechavod2022information}
+\bibfield{author}{\bibinfo{person}{Yahav Bechavod}, \bibinfo{person}{Chara Podimata}, \bibinfo{person}{Steven Wu}, {and} \bibinfo{person}{Juba Ziani}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Information discrepancy in strategic learning}. In \bibinfo{booktitle}{\emph{International Conference on Machine Learning}}. PMLR, \bibinfo{pages}{1691--1715}.
+\newblock
+
+
+\bibitem[Bu{\c{c}}inca et~al\mbox{.}(2021)]%
+        {buccinca2021trust}
+\bibfield{author}{\bibinfo{person}{Zana Bu{\c{c}}inca}, \bibinfo{person}{Maja~Barbara Malaya}, {and} \bibinfo{person}{Krzysztof~Z Gajos}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{To trust or to think: cognitive forcing functions can reduce overreliance on AI in AI-assisted decision-making}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the ACM on Human-computer Interaction}} \bibinfo{volume}{5}, \bibinfo{number}{CSCW1} (\bibinfo{year}{2021}), \bibinfo{pages}{1--21}.
+\newblock
+
+
+\bibitem[Burrell et~al\mbox{.}(2019)]%
+        {burrell2019users}
+\bibfield{author}{\bibinfo{person}{Jenna Burrell}, \bibinfo{person}{Zoe Kahn}, \bibinfo{person}{Anne Jonas}, {and} \bibinfo{person}{Daniel Griffin}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{When users control the algorithms: values expressed in practices on twitter}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the ACM on Human-Computer Interaction}} \bibinfo{volume}{3}, \bibinfo{number}{CSCW} (\bibinfo{year}{2019}), \bibinfo{pages}{1--20}.
+\newblock
+
+
+\bibitem[Camacho and Conover(2011)]%
+        {Camacho2011manipulation}
+\bibfield{author}{\bibinfo{person}{Adriana Camacho} {and} \bibinfo{person}{Emily Conover}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Manipulation of Social Program Eligibility}.
+\newblock \bibinfo{journal}{\emph{American Economic Journal: Economic Policy}} \bibinfo{volume}{3}, \bibinfo{number}{2} (\bibinfo{date}{May} \bibinfo{year}{2011}), \bibinfo{pages}{41–65}.
+\newblock
+\href{https://doi.org/10.1257/pol.3.2.41}{doi:\nolinkurl{10.1257/pol.3.2.41}}
+
+
+\bibitem[Chen and Lin(2023)]%
+        {chen2023persuading}
+\bibfield{author}{\bibinfo{person}{Yiling Chen} {and} \bibinfo{person}{Tao Lin}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Persuading a behavioral agent: Approximately best responding and learning}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2302.03719}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Cohen et~al\mbox{.}(2024)]%
+        {cohen2024bayesian}
+\bibfield{author}{\bibinfo{person}{Lee Cohen}, \bibinfo{person}{Saeed Sharifi-Malvajerdi}, \bibinfo{person}{Kevin Stangl}, \bibinfo{person}{Ali Vakilian}, {and} \bibinfo{person}{Juba Ziani}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Bayesian Strategic Classification}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2402.08758}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[de~Clippel and Zhang(2022)]%
+        {de2022non}
+\bibfield{author}{\bibinfo{person}{Geoffroy de Clippel} {and} \bibinfo{person}{Xu Zhang}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Non-bayesian persuasion}.
+\newblock \bibinfo{journal}{\emph{Journal of Political Economy}} \bibinfo{volume}{130}, \bibinfo{number}{10} (\bibinfo{year}{2022}), \bibinfo{pages}{2594--2642}.
+\newblock
+
+
+\bibitem[Dong et~al\mbox{.}(2018)]%
+        {dong2018strategic}
+\bibfield{author}{\bibinfo{person}{Jinshuo Dong}, \bibinfo{person}{Aaron Roth}, \bibinfo{person}{Zachary Schutzman}, \bibinfo{person}{Bo Waggoner}, {and} \bibinfo{person}{Zhiwei~Steven Wu}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Strategic classification from revealed preferences}. In \bibinfo{booktitle}{\emph{Proceedings of the 2018 ACM Conference on Economics and Computation}}. \bibinfo{pages}{55--70}.
+\newblock
+
+
+\bibitem[Doshi-Velez et~al\mbox{.}(2017)]%
+        {doshivelez2019accountabilityailawrole}
+\bibfield{author}{\bibinfo{person}{Finale Doshi-Velez}, \bibinfo{person}{Mason Kortz}, \bibinfo{person}{Ryan Budish}, \bibinfo{person}{Chris Bavitz}, \bibinfo{person}{Sam Gershman}, \bibinfo{person}{David O'Brien}, \bibinfo{person}{Kate Scott}, \bibinfo{person}{Stuart Schieber}, \bibinfo{person}{James Waldo}, \bibinfo{person}{David Weinberger}, {et~al\mbox{.}}} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Accountability of AI under the law: The role of explanation}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1711.01134}} (\bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[Eslami et~al\mbox{.}(2016)]%
+        {eslami2016first}
+\bibfield{author}{\bibinfo{person}{Motahhare Eslami}, \bibinfo{person}{Karrie Karahalios}, \bibinfo{person}{Christian Sandvig}, \bibinfo{person}{Kristen Vaccaro}, \bibinfo{person}{Aimee Rickman}, \bibinfo{person}{Kevin Hamilton}, {and} \bibinfo{person}{Alex Kirlik}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{First I "like" It, Then I Hide It: Folk Theories of Social Feeds}}. In \bibinfo{booktitle}{\emph{Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems}} \emph{(\bibinfo{series}{CHI '16})}. \bibinfo{pages}{2371–2382}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2858036.2858494}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Freitas(2014)]%
+        {freitas2014position}
+\bibfield{author}{\bibinfo{person}{Alex~A. Freitas}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Comprehensible classification models: a position paper}.
+\newblock \bibinfo{journal}{\emph{SIGKDD Explor. Newsl.}} \bibinfo{volume}{15}, \bibinfo{number}{1} (\bibinfo{date}{March} \bibinfo{year}{2014}), \bibinfo{pages}{1–10}.
+\newblock
+\showISSN{1931-0145}
+\href{https://doi.org/10.1145/2594473.2594475}{doi:\nolinkurl{10.1145/2594473.2594475}}
+
+
+\bibitem[Ghalme et~al\mbox{.}(2021)]%
+        {Ghalme2021StrategicCI}
+\bibfield{author}{\bibinfo{person}{Ganesh Ghalme}, \bibinfo{person}{Vineet~Jagadeesan Nair}, \bibinfo{person}{Itay Eilat}, \bibinfo{person}{Inbal Talgam-Cohen}, {and} \bibinfo{person}{Nir Rosenfeld}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Strategic Classification in the Dark}. In \bibinfo{booktitle}{\emph{International Conference on Machine Learning}}.
+\newblock
+\urldef\tempurl%
+\url{https://api.semanticscholar.org/CorpusID:232013502}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Gonzalez and Wu(1999)]%
+        {gonzalez1999shape}
+\bibfield{author}{\bibinfo{person}{Richard Gonzalez} {and} \bibinfo{person}{George Wu}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{On the shape of the probability weighting function}.
+\newblock \bibinfo{journal}{\emph{Cognitive psychology}} \bibinfo{volume}{38}, \bibinfo{number}{1} (\bibinfo{year}{1999}), \bibinfo{pages}{129--166}.
+\newblock
+
+
+\bibitem[Haghtalab et~al\mbox{.}(2024)]%
+        {haghtalab2023calibratedstackelberggameslearning}
+\bibfield{author}{\bibinfo{person}{Nika Haghtalab}, \bibinfo{person}{Chara Podimata}, {and} \bibinfo{person}{Kunhe Yang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Calibrated stackelberg games: Learning optimal commitments against calibrated agents}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing Systems}}  \bibinfo{volume}{36} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Hardt et~al\mbox{.}(2016)]%
+        {Hardt2016strategic}
+\bibfield{author}{\bibinfo{person}{Moritz Hardt}, \bibinfo{person}{Nimrod Megiddo}, \bibinfo{person}{Christos Papadimitriou}, {and} \bibinfo{person}{Mary Wootters}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Strategic Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 2016 ACM Conference on Innovations in Theoretical Computer Science}} (Cambridge, Massachusetts, USA) \emph{(\bibinfo{series}{ITCS '16})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{111–122}.
+\newblock
+\showISBNx{9781450340571}
+\href{https://doi.org/10.1145/2840728.2840730}{doi:\nolinkurl{10.1145/2840728.2840730}}
+
+
+\bibitem[Harris et~al\mbox{.}(2022)]%
+        {harris2022bayesian}
+\bibfield{author}{\bibinfo{person}{Keegan Harris}, \bibinfo{person}{Valerie Chen}, \bibinfo{person}{Joon Kim}, \bibinfo{person}{Ameet Talwalkar}, \bibinfo{person}{Hoda Heidari}, {and} \bibinfo{person}{Steven~Z Wu}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Bayesian persuasion for algorithmic recourse}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing Systems}}  \bibinfo{volume}{35} (\bibinfo{year}{2022}), \bibinfo{pages}{11131--11144}.
+\newblock
+
+
+\bibitem[Heidari et~al\mbox{.}(2021)]%
+        {heidari2021perceptions}
+\bibfield{author}{\bibinfo{person}{Hoda Heidari}, \bibinfo{person}{Solon Barocas}, \bibinfo{person}{Jon Kleinberg}, {and} \bibinfo{person}{Karen Levy}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{On Modeling Human Perceptions of Allocation Policies with Uncertain Outcomes}. In \bibinfo{booktitle}{\emph{Proceedings of the 22nd ACM Conference on Economics and Computation}} (Budapest, Hungary) \emph{(\bibinfo{series}{EC '21})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{589–609}.
+\newblock
+\showISBNx{9781450385541}
+\href{https://doi.org/10.1145/3465456.3467617}{doi:\nolinkurl{10.1145/3465456.3467617}}
+
+
+\bibitem[Hong et~al\mbox{.}(2020)]%
+        {hong2020humanfactors}
+\bibfield{author}{\bibinfo{person}{Sungsoo~Ray Hong}, \bibinfo{person}{Jessica Hullman}, {and} \bibinfo{person}{Enrico Bertini}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Human Factors in Model Interpretability: Industry Practices, Challenges, and Needs}.
+\newblock \bibinfo{journal}{\emph{Proc. ACM Hum.-Comput. Interact.}} \bibinfo{volume}{4}, \bibinfo{number}{CSCW1}, Article \bibinfo{articleno}{68} (\bibinfo{date}{May} \bibinfo{year}{2020}), \bibinfo{numpages}{26}~pages.
+\newblock
+\href{https://doi.org/10.1145/3392878}{doi:\nolinkurl{10.1145/3392878}}
+
+
+\bibitem[Hu et~al\mbox{.}(2019)]%
+        {Hu2019disparate}
+\bibfield{author}{\bibinfo{person}{Lily Hu}, \bibinfo{person}{Nicole Immorlica}, {and} \bibinfo{person}{Jennifer~Wortman Vaughan}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{The Disparate Effects of Strategic Manipulation}. In \bibinfo{booktitle}{\emph{Proceedings of the Conference on Fairness, Accountability, and Transparency}} (Atlanta, GA, USA) \emph{(\bibinfo{series}{FAT* '19})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{259–268}.
+\newblock
+\showISBNx{9781450361255}
+\href{https://doi.org/10.1145/3287560.3287597}{doi:\nolinkurl{10.1145/3287560.3287597}}
+
+
+\bibitem[Kahnemann and Tversky(1979)]%
+        {kahnemann1979prospect}
+\bibfield{author}{\bibinfo{person}{D Kahnemann} {and} \bibinfo{person}{Amos Tversky}.} \bibinfo{year}{1979}\natexlab{}.
+\newblock \showarticletitle{Prospect theory: A decision making under risk}.
+\newblock \bibinfo{journal}{\emph{Econometrica}} \bibinfo{volume}{47}, \bibinfo{number}{2} (\bibinfo{year}{1979}), \bibinfo{pages}{263--291}.
+\newblock
+
+
+\bibitem[Karimi et~al\mbox{.}(2022)]%
+        {karimi2022recoursesurvey}
+\bibfield{author}{\bibinfo{person}{Amir-Hossein Karimi}, \bibinfo{person}{Gilles Barthe}, \bibinfo{person}{Bernhard Sch\"{o}lkopf}, {and} \bibinfo{person}{Isabel Valera}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A Survey of Algorithmic Recourse: Contrastive Explanations and Consequential Recommendations}.
+\newblock \bibinfo{journal}{\emph{ACM Comput. Surv.}} \bibinfo{volume}{55}, \bibinfo{number}{5}, Article \bibinfo{articleno}{95} (\bibinfo{date}{Dec.} \bibinfo{year}{2022}), \bibinfo{numpages}{29}~pages.
+\newblock
+\showISSN{0360-0300}
+\href{https://doi.org/10.1145/3527848}{doi:\nolinkurl{10.1145/3527848}}
+
+
+\bibitem[Karimi et~al\mbox{.}(2021)]%
+        {karimi2021algorithmicrecourse}
+\bibfield{author}{\bibinfo{person}{Amir-Hossein Karimi}, \bibinfo{person}{Bernhard Sch\"{o}lkopf}, {and} \bibinfo{person}{Isabel Valera}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Algorithmic Recourse: from Counterfactual Explanations to Interventions}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency}} (Virtual Event, Canada) \emph{(\bibinfo{series}{FAccT '21})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{353–362}.
+\newblock
+\showISBNx{9781450383097}
+\href{https://doi.org/10.1145/3442188.3445899}{doi:\nolinkurl{10.1145/3442188.3445899}}
+
+
+\bibitem[Kleinberg and Raghavan(2020)]%
+        {kleinberg202induce}
+\bibfield{author}{\bibinfo{person}{Jon Kleinberg} {and} \bibinfo{person}{Manish Raghavan}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{How Do Classifiers Induce Agents to Invest Effort Strategically?}
+\newblock \bibinfo{journal}{\emph{ACM Trans. Econ. Comput.}} \bibinfo{volume}{8}, \bibinfo{number}{4}, Article \bibinfo{articleno}{19} (\bibinfo{date}{oct} \bibinfo{year}{2020}), \bibinfo{numpages}{23}~pages.
+\newblock
+\showISSN{2167-8375}
+\href{https://doi.org/10.1145/3417742}{doi:\nolinkurl{10.1145/3417742}}
+
+
+\bibitem[Kulesza et~al\mbox{.}(2015)]%
+        {kulesza2015principles}
+\bibfield{author}{\bibinfo{person}{Todd Kulesza}, \bibinfo{person}{Margaret Burnett}, \bibinfo{person}{Weng-Keen Wong}, {and} \bibinfo{person}{Simone Stumpf}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Principles of Explanatory Debugging to Personalize Interactive Machine Learning}. In \bibinfo{booktitle}{\emph{Proceedings of the 20th International Conference on Intelligent User Interfaces}} (Atlanta, Georgia, USA) \emph{(\bibinfo{series}{IUI '15})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{126–137}.
+\newblock
+\showISBNx{9781450333061}
+\href{https://doi.org/10.1145/2678025.2701399}{doi:\nolinkurl{10.1145/2678025.2701399}}
+
+
+\bibitem[Kumar et~al\mbox{.}(2020)]%
+        {kumar2020shapproblem}
+\bibfield{author}{\bibinfo{person}{I.~Elizabeth Kumar}, \bibinfo{person}{Suresh Venkatasubramanian}, \bibinfo{person}{Carlos Scheidegger}, {and} \bibinfo{person}{Sorelle~A. Friedler}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Problems with Shapley-value-based explanations as feature importance measures}. In \bibinfo{booktitle}{\emph{Proceedings of the 37th International Conference on Machine Learning}} \emph{(\bibinfo{series}{ICML'20})}. \bibinfo{publisher}{JMLR.org}, Article \bibinfo{articleno}{509}, \bibinfo{numpages}{10}~pages.
+\newblock
+
+
+\bibitem[Lakkaraju et~al\mbox{.}(2016)]%
+        {lakkaraju2016decisionsets}
+\bibfield{author}{\bibinfo{person}{Himabindu Lakkaraju}, \bibinfo{person}{Stephen~H. Bach}, {and} \bibinfo{person}{Jure Leskovec}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Interpretable Decision Sets: A Joint Framework for Description and Prediction}. In \bibinfo{booktitle}{\emph{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}} (San Francisco, California, USA) \emph{(\bibinfo{series}{KDD '16})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1675–1684}.
+\newblock
+\showISBNx{9781450342322}
+\href{https://doi.org/10.1145/2939672.2939874}{doi:\nolinkurl{10.1145/2939672.2939874}}
+
+
+\bibitem[Lakkaraju and Bastani(2020)]%
+        {lakkaraju2020fool}
+\bibfield{author}{\bibinfo{person}{Himabindu Lakkaraju} {and} \bibinfo{person}{Osbert Bastani}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{"How do I fool you?": Manipulating User Trust via Misleading Black Box Explanations}. In \bibinfo{booktitle}{\emph{Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society}} (New York, NY, USA) \emph{(\bibinfo{series}{AIES '20})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{79–85}.
+\newblock
+\showISBNx{9781450371100}
+\href{https://doi.org/10.1145/3375627.3375833}{doi:\nolinkurl{10.1145/3375627.3375833}}
+
+
+\bibitem[Liu et~al\mbox{.}(2020)]%
+        {Liu2020disparateequilibria}
+\bibfield{author}{\bibinfo{person}{Lydia~T. Liu}, \bibinfo{person}{Ashia Wilson}, \bibinfo{person}{Nika Haghtalab}, \bibinfo{person}{Adam~Tauman Kalai}, \bibinfo{person}{Christian Borgs}, {and} \bibinfo{person}{Jennifer Chayes}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{The disparate equilibria of algorithmic decision making when individuals invest rationally}. In \bibinfo{booktitle}{\emph{Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency}} (Barcelona, Spain) \emph{(\bibinfo{series}{FAT* '20})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{381–391}.
+\newblock
+\showISBNx{9781450369367}
+\href{https://doi.org/10.1145/3351095.3372861}{doi:\nolinkurl{10.1145/3351095.3372861}}
+
+
+\bibitem[Liu et~al\mbox{.}(2024)]%
+        {liu2024largelanguagemodelsassume}
+\bibfield{author}{\bibinfo{person}{Ryan Liu}, \bibinfo{person}{Jiayi Geng}, \bibinfo{person}{Joshua~C Peterson}, \bibinfo{person}{Ilia Sucholutsky}, {and} \bibinfo{person}{Thomas~L Griffiths}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Large Language Models Assume People are More Rational than We Really are}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2406.17055}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Lundberg and Lee(2017)]%
+        {lundberg2017shap}
+\bibfield{author}{\bibinfo{person}{Scott~M Lundberg} {and} \bibinfo{person}{Su-In Lee}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{A Unified Approach to Interpreting Model Predictions}. In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems}}, \bibfield{editor}{\bibinfo{person}{I.~Guyon}, \bibinfo{person}{U.~Von Luxburg}, \bibinfo{person}{S.~Bengio}, \bibinfo{person}{H.~Wallach}, \bibinfo{person}{R.~Fergus}, \bibinfo{person}{S.~Vishwanathan}, {and} \bibinfo{person}{R.~Garnett}} (Eds.), Vol.~\bibinfo{volume}{30}. \bibinfo{publisher}{Curran Associates, Inc.}
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper_files/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Milli et~al\mbox{.}(2019)]%
+        {Milli2019socialcost}
+\bibfield{author}{\bibinfo{person}{Smitha Milli}, \bibinfo{person}{John Miller}, \bibinfo{person}{Anca~D. Dragan}, {and} \bibinfo{person}{Moritz Hardt}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{The Social Cost of Strategic Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the Conference on Fairness, Accountability, and Transparency}} (Atlanta, GA, USA) \emph{(\bibinfo{series}{FAT* '19})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{230–239}.
+\newblock
+\showISBNx{9781450361255}
+\href{https://doi.org/10.1145/3287560.3287576}{doi:\nolinkurl{10.1145/3287560.3287576}}
+
+
+\bibitem[M{\"o}hlmann and Zalmanson(2017)]%
+        {mohlmann2017hands}
+\bibfield{author}{\bibinfo{person}{Marieke M{\"o}hlmann} {and} \bibinfo{person}{Lior Zalmanson}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Hands on the wheel: Navigating algorithmic management and Uber drivers’}. In \bibinfo{booktitle}{\emph{Autonomy’, in proceedings of the international conference on information systems (ICIS), Seoul South Korea}}. \bibinfo{pages}{10--13}.
+\newblock
+
+
+\bibitem[Mohseni et~al\mbox{.}(2021)]%
+        {mohseni2021survey}
+\bibfield{author}{\bibinfo{person}{Sina Mohseni}, \bibinfo{person}{Niloofar Zarei}, {and} \bibinfo{person}{Eric~D. Ragan}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{A Multidisciplinary Survey and Framework for Design and Evaluation of Explainable AI Systems}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Interact. Intell. Syst.}} \bibinfo{volume}{11}, \bibinfo{number}{3–4}, Article \bibinfo{articleno}{24} (\bibinfo{date}{Sept.} \bibinfo{year}{2021}), \bibinfo{numpages}{45}~pages.
+\newblock
+\showISSN{2160-6455}
+\href{https://doi.org/10.1145/3387166}{doi:\nolinkurl{10.1145/3387166}}
+
+
+\bibitem[Morewedge et~al\mbox{.}(2023)]%
+        {Morewedge2023bias}
+\bibfield{author}{\bibinfo{person}{Carey~K. Morewedge}, \bibinfo{person}{Sendhil Mullainathan}, \bibinfo{person}{Haaya~F. Naushan}, \bibinfo{person}{Cass~R. Sunstein}, \bibinfo{person}{Jon Kleinberg}, \bibinfo{person}{Manish Raghavan}, {and} \bibinfo{person}{Jens~O. Ludwig}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Human bias in algorithm design}.
+\newblock \bibinfo{journal}{\emph{Nature Human Behaviour}} \bibinfo{volume}{7}, \bibinfo{number}{11} (\bibinfo{date}{01 Nov} \bibinfo{year}{2023}), \bibinfo{pages}{1822--1824}.
+\newblock
+\showISSN{2397-3374}
+\href{https://doi.org/10.1038/s41562-023-01724-4}{doi:\nolinkurl{10.1038/s41562-023-01724-4}}
+
+
+\bibitem[Nauta et~al\mbox{.}(2023)]%
+        {systematic2023nauta}
+\bibfield{author}{\bibinfo{person}{Meike Nauta}, \bibinfo{person}{Jan Trienes}, \bibinfo{person}{Shreyasi Pathak}, \bibinfo{person}{Elisa Nguyen}, \bibinfo{person}{Michelle Peters}, \bibinfo{person}{Yasmin Schmitt}, \bibinfo{person}{J\"{o}rg Schl\"{o}tterer}, \bibinfo{person}{Maurice van Keulen}, {and} \bibinfo{person}{Christin Seifert}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI}.
+\newblock \bibinfo{journal}{\emph{ACM Comput. Surv.}} \bibinfo{volume}{55}, \bibinfo{number}{13s}, Article \bibinfo{articleno}{295} (\bibinfo{date}{July} \bibinfo{year}{2023}), \bibinfo{numpages}{42}~pages.
+\newblock
+\showISSN{0360-0300}
+\href{https://doi.org/10.1145/3583558}{doi:\nolinkurl{10.1145/3583558}}
+
+
+\bibitem[Passi and Vorvoreanu(2022)]%
+        {passi2022overreliance}
+\bibfield{author}{\bibinfo{person}{Samir Passi} {and} \bibinfo{person}{Mihaela Vorvoreanu}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Overreliance on AI literature review}.
+\newblock \bibinfo{journal}{\emph{Microsoft Research}} (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[Perdomo et~al\mbox{.}(2020)]%
+        {Perdomo2020performative}
+\bibfield{author}{\bibinfo{person}{Juan~C. Perdomo}, \bibinfo{person}{Tijana Zrnic}, \bibinfo{person}{Celestine Mendler-D\"{u}nner}, {and} \bibinfo{person}{Moritz Hardt}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Performative prediction}. In \bibinfo{booktitle}{\emph{Proceedings of the 37th International Conference on Machine Learning}} \emph{(\bibinfo{series}{ICML'20})}. \bibinfo{publisher}{JMLR.org}, Article \bibinfo{articleno}{704}, \bibinfo{numpages}{11}~pages.
+\newblock
+
+
+\bibitem[Poursabzi-Sangdeh et~al\mbox{.}(2021)]%
+        {poursabzi2021manipulating}
+\bibfield{author}{\bibinfo{person}{Forough Poursabzi-Sangdeh}, \bibinfo{person}{Daniel~G Goldstein}, \bibinfo{person}{Jake~M Hofman}, \bibinfo{person}{Jennifer~Wortman Wortman~Vaughan}, {and} \bibinfo{person}{Hanna Wallach}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Manipulating and Measuring Model Interpretability}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems}} (Yokohama, Japan) \emph{(\bibinfo{series}{CHI '21})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{237}, \bibinfo{numpages}{52}~pages.
+\newblock
+\showISBNx{9781450380966}
+\href{https://doi.org/10.1145/3411764.3445315}{doi:\nolinkurl{10.1145/3411764.3445315}}
+
+
+\bibitem[Prelec(1998)]%
+        {Prelec1998}
+\bibfield{author}{\bibinfo{person}{Drazen Prelec}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{The Probability Weighting Function}.
+\newblock \bibinfo{journal}{\emph{Econometrica}} \bibinfo{volume}{66}, \bibinfo{number}{3} (\bibinfo{year}{1998}), \bibinfo{pages}{497--527}.
+\newblock
+\showISSN{00129682, 14680262}
+\urldef\tempurl%
+\url{http://www.jstor.org/stable/2998573}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Ribeiro et~al\mbox{.}(2016)]%
+        {ribeiro2016lime}
+\bibfield{author}{\bibinfo{person}{Marco~Tulio Ribeiro}, \bibinfo{person}{Sameer Singh}, {and} \bibinfo{person}{Carlos Guestrin}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{"Why Should I Trust You?": Explaining the Predictions of Any Classifier}. In \bibinfo{booktitle}{\emph{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}} (San Francisco, California, USA) \emph{(\bibinfo{series}{KDD '16})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1135–1144}.
+\newblock
+\showISBNx{9781450342322}
+\href{https://doi.org/10.1145/2939672.2939778}{doi:\nolinkurl{10.1145/2939672.2939778}}
+
+
+\bibitem[Sixt et~al\mbox{.}(2022)]%
+        {sixt2022do}
+\bibfield{author}{\bibinfo{person}{Leon Sixt}, \bibinfo{person}{Martin Schuessler}, \bibinfo{person}{Oana-Iuliana Popescu}, \bibinfo{person}{Philipp Wei{\ss}}, {and} \bibinfo{person}{Tim Landgraf}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Do Users Benefit From Interpretable Vision? A User Study, Baseline, And Dataset}. In \bibinfo{booktitle}{\emph{International Conference on Learning Representations}}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=v6s3HVjPerv}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Ustun et~al\mbox{.}(2019)]%
+        {ustun2019recourse}
+\bibfield{author}{\bibinfo{person}{Berk Ustun}, \bibinfo{person}{Alexander Spangher}, {and} \bibinfo{person}{Yang Liu}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Actionable Recourse in Linear Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the Conference on Fairness, Accountability, and Transparency}} (Atlanta, GA, USA) \emph{(\bibinfo{series}{FAT* '19})}. \bibinfo{publisher}{Association for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{10–19}.
+\newblock
+\showISBNx{9781450361255}
+\href{https://doi.org/10.1145/3287560.3287566}{doi:\nolinkurl{10.1145/3287560.3287566}}
+
+
+\bibitem[Vasconcelos et~al\mbox{.}(2023)]%
+        {vasconcelos2023explanations}
+\bibfield{author}{\bibinfo{person}{Helena Vasconcelos}, \bibinfo{person}{Matthew J{\"o}rke}, \bibinfo{person}{Madeleine Grunde-McLaughlin}, \bibinfo{person}{Tobias Gerstenberg}, \bibinfo{person}{Michael~S Bernstein}, {and} \bibinfo{person}{Ranjay Krishna}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Explanations can reduce overreliance on ai systems during decision-making}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the ACM on Human-Computer Interaction}} \bibinfo{volume}{7}, \bibinfo{number}{CSCW1} (\bibinfo{year}{2023}), \bibinfo{pages}{1--38}.
+\newblock
+
+
+\bibitem[Zhang et~al\mbox{.}(2022)]%
+        {pmlr-v162-zhang22l}
+\bibfield{author}{\bibinfo{person}{Xueru Zhang}, \bibinfo{person}{Mohammad~Mahdi Khalili}, \bibinfo{person}{Kun Jin}, \bibinfo{person}{Parinaz Naghizadeh}, {and} \bibinfo{person}{Mingyan Liu}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Fairness Interventions as ({D}is){I}ncentives for Strategic Manipulation}. In \bibinfo{booktitle}{\emph{Proceedings of the 39th International Conference on Machine Learning}} \emph{(\bibinfo{series}{Proceedings of Machine Learning Research}, Vol.~\bibinfo{volume}{162})}, \bibfield{editor}{\bibinfo{person}{Kamalika Chaudhuri}, \bibinfo{person}{Stefanie Jegelka}, \bibinfo{person}{Le~Song}, \bibinfo{person}{Csaba Szepesvari}, \bibinfo{person}{Gang Niu}, {and} \bibinfo{person}{Sivan Sabato}} (Eds.). \bibinfo{publisher}{PMLR}, \bibinfo{pages}{26239--26264}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.mlr.press/v162/zhang22l.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhu et~al\mbox{.}(2024)]%
+        {zhu2024capturingcomplexityhumanstrategic}
+\bibfield{author}{\bibinfo{person}{Jian-Qiao Zhu}, \bibinfo{person}{Joshua~C Peterson}, \bibinfo{person}{Benjamin Enke}, {and} \bibinfo{person}{Thomas~L Griffiths}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Capturing the complexity of human strategic decision-making with machine learning}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2408.07865}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\end{thebibliography}

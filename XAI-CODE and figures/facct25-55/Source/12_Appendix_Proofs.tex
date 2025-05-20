@@ -1,0 +1,92 @@
+\section{Proofs}\label{sec:app-proofs}
+
+\paragraph{Proof of Lemma~\ref{lemma:band-optimization}, Lemma~\ref{lemma:quad-cost-band}, and Lemma~\ref{lemma:manhattan-cost-band}}We show the NB case, the B case can be shown similarly. We divide the agents into two subsets: (1) Agents that will attempt to optimize and (2) agents that will not attempt to optimize. The first subset is the agents that will have a non-negative utility after optimization, i.e., will have $r-c(\vx_\text{NB}, \vx_0)$. For these agents, since their reward is constant, the optimization problem comes down to:
+\begin{align}
+    &\vx_\text{NB} := \argmax_\vx ~ r - c(\vx, \vx_0) \notag\\
+    &\text{subject to}\quad \vtheta^T\vx = \theta_0
+\end{align}
+And the agents that are in the second subset will solve $\vx_\text{NB} := \argmin_\vx ~ c(\vx, \vx_0)$ which is simply $\vx_\text{NB}=\vx_0$.
+
+\textbf{Lemma~\ref{lemma:band-optimization}:} For norm-2 cost we know this is the same as finding the closest point on a hyperplane to a given point. We know the solution for this problem is to move in the direction of the normal vector of the hyperplane by $d(\vx_0, \vtheta, \theta_0)=\frac{\theta_0-\vtheta^T\vx_0}{\norm{\vtheta}_2}$. This means that the solution for the agents in the first subset is $\vx_\text{NB} = \vx_0 + d(\vx_0, \vtheta, \theta_{0})\vtheta$.
+
+\textbf{Lemma~\ref{lemma:quad-cost-band}} The quadratic cost is similar to norm-2 cost, by directly solving the optimization problem and having $\lambda$ to be the Lagrange multiplier for the constraint we find:
+\begin{align}
+    &x_{i, \text{NB}} = \frac{\lambda}{2}\frac{\theta_i}{c_i}+x_{i, 0} \text{ and } \notag\\
+    &\frac{\lambda}{2} = \frac{\theta_0-\vtheta^T\vx_0}{\sum_j \frac{\theta_j^2}{c_j}}\Rightarrow x_{i, \text{NB}} = \frac{\theta_0-\vtheta^T\vx_0}{\sum_j\frac{\theta_j^2}{c_i}}\frac{\theta_i}{c_i}+x_{i, 0}
+\end{align}
+Which is, in some sense, a movement with a weighted distance from $\vx_0$ towards the hyperplane. 
+
+\textbf{Lemma~\ref{lemma:manhattan-cost-band}} For the weighted Manhattan cost we are aiming to find the most efficient feature, i.e., the feature with the lowest $\frac{c_i}{\theta_i}$. 
+
+\paragraph{Proof of Proposition~\ref{prop:under-invest-high-dim}}For a behavioral agent with $\vx_0$ that perceives $\theta_i$ as $\evw_i(\vtheta)$ to under-invest we need to have $\delta_i^{\text{B}}=d(\vx_0, \vw(\vtheta), \theta_0)\times \evw_i(\vtheta) < \delta_i^{\text{NB}}=d(\vx_0, \vtheta, \theta_0)\times \theta_i$, or $\frac{d(\vx_0, \vw(\vtheta), \theta_0)}{d(\vx_0, \vtheta, \theta_0)}<\frac{\theta_i}{\evw_i(\vtheta)}$. 
+
+By knowing $\evw_i(\vtheta)<\theta_i$ then the agents with $d(\vx_0, \vw(\vtheta), \theta_0)\le d(\vx_0, \vtheta, \theta_0)$ will satisfy the condition since $\frac{d(\vx_0, \vw(\vtheta), \theta_0)}{d(\vx_0, \vtheta, \theta_0)}\le 1 < \frac{\theta_i}{\evw_i(\vtheta)}$ and under-invest in feature $i$. We can show the second statement similarly. 
+
+The third statement of the proposition is a scenario where $\evw_1(\theta)<\theta_1$ where $\theta_1\ge \theta_i$ for all $i$, and we want to identify agents that will over-invest in that feature, i.e., $\frac{d(\vx_0, \vw(\vtheta), \theta_0)}{d(\vx_0, \vtheta, \theta_0)}>\frac{\theta_1}{\evw_1(\vtheta)}$. 
+
+Since for the most important feature we have $\evw_1(\vtheta)=p(\theta_1)$, we can easily find the maximum of $\frac{\theta_1}{\evw_1(\vtheta)}$ for a given $\gamma$ by taking the derivative and using the function in \cite{Prelec1998}. This maximum occurs at $\theta^* = e^{-(\frac{1}{\gamma})^\frac{1}{\gamma-1}}$ meaning, $\frac{\theta_1}{\evw_1(\vtheta)}\le \frac{\theta^*}{\evw(\theta^*)} = \exp((\frac{1}{\gamma})^\frac{\gamma}{\gamma-1}-(\frac{1}{\gamma})^\frac{1}{\gamma-1})$. Therefore, using the same reasoning for the first two statements, agents with $\frac{d(\vx_0, \vw(\vtheta), \theta_0)}{d(\vx_0, \vtheta, \theta_0)}\ge \exp((\frac{1}{\gamma})^\frac{\gamma}{\gamma-1}-(\frac{1}{\gamma})^\frac{1}{\gamma-1})$ will over-invest in the most important feature, i.e., feature 1. {We can further write $\frac{d(\boldsymbol{x}_0, \boldsymbol{w}(\boldsymbol{\theta}), \theta_0)}{d(\boldsymbol{x}_0, \boldsymbol{\theta}, \theta_0)}\ge \exp((\frac{1}{\gamma})^\frac{\gamma}{\gamma-1}-(\frac{1}{\gamma})^\frac{1}{\gamma-1}) = \exp(\gamma^{-\frac{\gamma}{\gamma-1}}-\gamma^{-\frac{1}{\gamma-1}}) = \exp(\gamma^{\frac{\gamma}{1-\gamma}}-\gamma^{\frac{1}{1-\gamma}})$ which brings us to the expression in Proposition~\ref{prop:under-invest-high-dim}.}
+
+\paragraph{Proof of Proposition~\ref{prop:mismatch-actual-b}}
+We start the proof from the leftmost inequality in \eqref{eq:firm-loss-comp-benefit}. By the definition of $(\vtheta_\text{B}, \vtheta_{0, \text{B}})$ we can write 
+\begin{align*}
+    \E_{\vx\sim\mathcal{D}(\vw(\vtheta_\text{B}), \theta_{0, \text{B}})}[l(\vx, (\vtheta_\text{B}, \vtheta_{0, \text{B}}))]\le \E_{\vx\sim\mathcal{D}(\vw(\vtheta), \theta_{0})}[l(\vx, (\vtheta, \vtheta_0))    
+\end{align*}
+for all $(\vtheta, \vtheta_0)\neq (\vtheta_\text{B}, \vtheta_{0, \text{B}})$, i.e.,
+\begin{align*}
+    \sL((\vw(\vtheta_\text{B}), \theta_{0, \text{B}}), (\vtheta_\text{B}, \vtheta_{0, \text{B}}))\le \sL((\vw(\vtheta_\text{NB}), \theta_{0, \text{NB}}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))
+\end{align*}
+is always true. 
+
+We next provide a characterization of the set of agents who fall within regions \framebox(7,9){1} and \framebox(7,9){3} in Figure~\ref{fig:highlighted}. These are the set of agents who will still pass the (true) decision boundary regardless of their biases. 
+\begin{lemma}\label{lemma:H}
+     For a given $(\vtheta, \theta_0)$, agents that satisfy $(1-\sigma(\vtheta))\theta_0\le(\vtheta-\sigma(\vtheta)\vw(\vtheta))^T\vx$, if given enough budget, will be accepted by the classifier, where $\sigma(\vtheta) \coloneqq \frac{\vtheta^T\vw(\vtheta)}{\norm{\vw(\vtheta)}^2}$ is a measure of the intensity of behavioral bias. 
+\end{lemma}
+\begin{proof}
+    We can write agents' behavioral response as $\vx+\Delta_\text{B}$ with $\Delta_\text{B}=\frac{\theta_0-\vw(\vtheta)^T\vx}{\norm{\vw(\vtheta)}^2}\vw(\vtheta)$ for a given $(\vtheta, \theta_0)$. Agents that will have successful manipulation are the ones satisfying $\theta_0\le \vtheta^T(\vx+\Delta_\text{B})$ which, by substituting $\Delta_\text{B}$, can be written as:
+\begin{align}
+    &\vtheta_0\le \frac{\theta_0-\vw(\vtheta)^T\vx}{\norm{\vw(\vtheta)}^2}\vtheta^T\vw(\vtheta)+\vtheta^T\vx = \frac{\vtheta^T\vw(\vtheta)}{\norm{\vw(\vtheta)}^2}\theta_0+\notag\\
+    &\bigg( \vtheta - \frac{\vtheta^T\vw(\vtheta)}{\norm{\vw(\vtheta)}^2} \vw(\vtheta) \bigg)^T \vx \Rightarrow(1-\sigma(\vtheta))\theta_0 \le (\vtheta-\sigma(\vtheta)\vw(\vtheta))^T\vx
+\end{align}
+    Where we defined $\sigma(\vtheta)\coloneqq\frac{\vtheta^T\vw(\vtheta)}{\norm{\vw(\vtheta}^2}$.
+\end{proof}
+
+
+To compare the firm's loss after biased and non-biased responses, we can break the feature space into the following regions ($\1(\cdot)$ is the indicator function):
+\begin{enumerate}[label=\large\protect\textcircled{\small\arabic*}]
+    \item $\1(\vtheta_\text{NB}^T\vx\ge\theta_{0, \text{NB}})$
+    \item $\1(\vtheta_\text{NB}^T\vx\le\theta_{0, \text{NB}}-B)$
+    \item $\1(\theta_{0, \text{NB}}-B\le\vtheta_\text{NB}^T\vx\le\theta_{0, \text{NB}})\1(\theta_{0, \text{NB}}-B\le\vw(\vtheta_\text{NB})^T\vx\le\theta_{0, \text{NB}}) \equiv \sA(\vtheta_\text{NB}, \theta_{0, \text{NB}})\cap \sA(\vw(\vtheta_\text{NB}), \theta_{0, \text{NB}})$
+    \item $\1(\theta_{0, \text{NB}}-B\le\vtheta_\text{NB}^T\vx\le\theta_{0, \text{NB}})\1(\vw(\vtheta_\text{NB})^T\vx\ge\theta_{0, \text{NB}})$
+    \item $\1(\theta_{0, \text{NB}}-B\le\vtheta_\text{NB}^T\vx\le\theta_{0, \text{NB}})\1(\vw(\vtheta_\text{NB})^T\vx\le\theta_{0, \text{NB}}-B)$
+\end{enumerate}
+
+We know that for $\vx\in {\Circled{1}}$ and $\vx\in\Circled{2}$, the expected loss for both response scenarios is the same since the agents in the two regions are either already qualified or will never make it to the decision boundary. Therefore, to compare the expected loss for two scenarios we would need to look at the differences in the rest of the regions. 
+
+For $\vx\in\Circled{4}$ and $\vx\in\Circled{5}$ and biased responses, the expected loss would be the same as the non-strategic case. For $\vx\in\Circled{4}$ and $\vx\in\Circled{5}$ and the non-biased case, it could be higher or lower. For $\vx\in\Circled{3}$, the firm will have a lower (resp. higher) expected loss in the biased responses scenario if the truly unqualified agents are (resp. not) more than truly qualified agents. We furthermore focus on a subset of the region $\Circled{3}$ identified by Lemma~\ref{lemma:H}, region $\Circled{3a}$, which is the biased agents that will pass the threshold despite being biased. If we define the region identified by Lemma~\ref{lemma:H} by $\mathcal{H}(\vtheta_\text{NB}, \theta_{0, \text{NB}})$, then region $\Circled{3a}$ will be $\sA(\vtheta_\text{NB}, \theta_{0, \text{NB}})\cap \sA(\vw(\vtheta_\text{NB}), \theta_{0, \text{NB}}) \cap\mathcal{H}(\vtheta_\text{NB}, \theta_{0, \text{NB}})$. 
+
+For a setting where the loss function rewards true positives and penalizes false positives as $-u^+ TP + u^- FP$, as higher loss is worse as we defined, we can write the following:
+\begin{align}\label{eq:regions_NB}
+    &\sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}}))=\mL_{\Circled{1}\cup\Circled{2}} + \notag\\
+    &\int_{\vx\in\Circled{3}\cup\Circled{4}\cup\Circled{5}} \hspace{-0.9cm} \big( -u^+ p(\hat{y}=1 | \vx, y)f_1(\vx)\alpha_1 + u^- p(\hat{y}=1 | \vx, y)f_0(\vx)\alpha_0 \big) d\vx \\
+    &\sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))=\mL_{\Circled{1}\cup\Circled{2}} + \notag\\
+    &\int_{\vx\in\Circled{3a}} \big( -u^+ p(\hat{y}=1 | \vx, y)f_1(\vx)\alpha_1 + u^- p(\hat{y}=1 | \vx, y)f_0(\vx)\alpha_0 \big ) d\vx\label{eq:regions_B}
+\end{align}
+
+Where $\mL_{\Circled{1}\cup\Circled{2}}$ is the loss coming from regions $\Circled{1}$ and $\Circled{2}$ which is present in both scenarios. For $\sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}}))$, we know all the agents in $\Circled{3}\cup\Circled{4}\cup\Circled{5}$ will be accepted, i.e., $p(\hat{y}=1 | \vx\in\Circled{3}\cup\Circled{4}\cup\Circled{5}, y)=1$. Similar for $\sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))$ and $\vx\in\Circled{3a}$. 
+
+We can see from \eqref{eq:regions_NB} and \eqref{eq:regions_B} that depending on the density of label 0 and label 1 agents in the region $\Circled{3a}$ and comparing it to the region $\Circled{3}\cup\Circled{4}\cup\Circled{5}$ we can have both $\sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))\le \sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}}))$ and $\sL(\vtheta_\text{NB},$ $(\vtheta_\text{NB}, \theta_{0, \text{NB}}))\le \sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))$ occur. The difference in expected loss lies in the region $\Circled{3}\cup\Circled{4}\cup\Circled{5}-\Circled{3a}$, or equivalently $\sS(\vtheta_\text{NB}, \theta_{0, \text{NB}}) \coloneqq \sA(\vtheta_\text{NB}, \theta_{0, \text{NB}})/(\sA(\vtheta_\text{NB}, \theta_{0, \text{NB}})\cap \sA(\vw(\vtheta_\text{NB}), \theta_{0, \text{NB}}) \cap\mathcal{H}(\vtheta_\text{NB}, \theta_{0, \text{NB}}))$, we can write the following for $\sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}})) - \sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))\le 0$ (resp. $\ge 0$):
+\begin{align}
+    \int_{\vx\in\sS(\vtheta_\text{NB}, \theta_{0, \text{NB}})}(-u^+f_1(\vx)\alpha_1+u^-f_0(\vx)\alpha_0)dx \le 0 \text{ (resp. $\ge$ 0)}
+\end{align}
+
+Therefore, if the density of unqualified agents is higher (resp.~lower) than the density of qualified agents over the region $\sA(\vtheta_\text{NB}, \theta_{0, \text{NB}})/$ $(\sA(\vtheta_\text{NB}, \theta_{0, \text{NB}})\cap \sA(\vw(\vtheta_\text{NB}), \theta_{0, \text{NB}}) \cap\mathcal{H}(\vtheta_\text{NB}, \theta_{0, \text{NB}}))$, then:
+\begin{align*}
+    &\sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))\le \sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}})) \notag\\
+    &(\text{resp. } \sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}}))\le \sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}})))
+\end{align*}
+
+To show the last statement of the proposition, we need to compare $\sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))$ and $\sL(\vw(\vtheta_\text{B}), (\vtheta_\text{B}, \theta_{0, \text{B}})))$ directly. The difference between these two losses comes from the region where agents will be accepted by $(\vtheta_\text{NB}, \theta_{0, \text{NB}})$ and not by $(\vtheta_\text{B}, \theta_{0, \text{B}})$, and vice versa, after agents' response. Mathematically, for agents responding to $(\vtheta_\text{NB}, \theta_{0, \text{NB}})$ without bias, we can show the agents accepted by $(\vtheta_\text{NB}, \theta_{0, \text{NB}})$ by $\sY(\vtheta_\text{NB}, \theta_{0,\text{NB}})\cup \sA(\vtheta_\text{NB}, \theta_{0,\text{NB}})$. We want the intersection of this set with the agents not accepted by $(\vtheta_\text{B}, \theta_{0, \text{B}})$, which brings us to $\sT_1=(\sY(\vtheta_\text{NB}, \theta_{0,\text{NB}})\cup \sA(\vtheta_\text{NB}, \theta_{0,\text{NB}}))\cap \sN(\vtheta_\text{B}, \theta_{0,\text{B}})$. 
+
+Similarly, for agents responding to $(\vtheta_\text{NB}, \theta_{0, \text{NB}})$ with bias, we can show the agents accepted by $(\vtheta_\text{B}, \theta_{0, \text{B}})$ and not by $(\vtheta_\text{NB}, \theta_{0, \text{NB}})$ by $(\sY(\vtheta_\text{B}, \theta_{0,\text{B}}) \cap \sN(\vtheta_\text{NB}, \theta_{0,\text{NB}}))/\sA(\vtheta_\text{NB}, \theta_{0,\text{NB}})$. However, in this scenario, we need to also account for agents that make it past the actual decision boundary despite being behavioral, i.e., agents in the region $\mathcal{H}(\vtheta_\text{B}, \theta_{0,\text{B}})\cap \sA(\vw(\vtheta_\text{B}), \theta_{0,\text{B}})$, bringing us to $\sT_2 = (\mathcal{H}(\vtheta_\text{B}, \theta_{0,\text{B}})\cap \sA(\vw(\vtheta_\text{B}), \theta_{0,\text{B}}))\cup ( (\sY(\vtheta_\text{B}, \theta_{0,\text{B}}) \cap \sN(\vtheta_\text{NB}, \theta_{0,\text{NB}}))/\sA(\vtheta_\text{NB}, \theta_{0,\text{NB}}) )$. 
+
+We need the total loss from region $\sT_1$ to be lower than the total loss from the region $\sT_2$ in the two scenarios for $\sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}}))\le \sL(\vw(\vtheta_\text{B}), (\vtheta_\text{B}, \theta_{0, \text{B}}))$ to be true. Meaning that we need $\int_{\vx\in\sT_1}(-u^+$ $f_1(\vx)\alpha_1+u^-f_0(\vx)\alpha_0)d\vx \le \int_{\vx\in\sT_2}(-u^+f_1(\vx)\alpha_1+u^-f_0(\vx)\alpha_0)d\vx$ to be true for $\sL(\vtheta_\text{NB}, (\vtheta_\text{NB}, \theta_{0, \text{NB}}))\le \sL(\vw(\vtheta_\text{B}), (\vtheta_\text{B}, \theta_{0, \text{B}}))$, and the last inequality of the statement comes from the optimality condition. 
