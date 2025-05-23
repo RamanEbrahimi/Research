@@ -1,0 +1,41 @@
+\section{Model and Preliminaries}\label{sec:model}
+
+\subsection{Strategic Classification} 
+
+We consider an environment in which a \emph{firm} makes binary classification decisions on \emph{agents} with (observable) features $\mathbf{x}\in\mathbb{R}^n$ and (unobservable) true qualification states/labels $y\in\{0,1\}$, where label $y=1$ (resp. $y=0$) denotes qualified (resp. unqualified) agents. The firm uses a threshold classifier $h(\vx, (\vtheta, \theta_0))=\mathbf{1}(\vtheta^T\vx\geq \theta_0)$ to classify agents, where $\mathbf{1}(\cdot)$ denotes the indicator function, and $\vtheta=[\theta_1, \theta_2, \ldots, \theta_n]^T$ denotes the \emph{feature weights}; we assume feature weights are normalized so that $\sum_i \theta_i=1$. 
+
+Agents are strategic, in that they can respond to (``game'') this classifier. (As an example, in a college admission setting where grades are used to make admission decisions, students can study or cheat to improve their grades.) Formally, an agent with \emph{pre-strategic} features $\vx_0$ best-responds to classifier $(\vtheta, \theta_0)$ to arrive at the \emph{(non-behavioral) post-strategic} features $\vx_{\text{NB}}$ by solving the optimization problem:
+\begin{align}\label{eq:agent-optimization}
+    &\vx_\text{NB} := \argmax_\vx ~ rh(\vx, (\vtheta, \theta_0))-c(\vx, \vx_0) \notag\\
+    &\text{subject to}\quad c(\vx, \vx_0)\le B
+\end{align}
+where $r>0$ is the reward of positive classification, $c(\vx, \vx_0)$ is the cost of changing feature vector $\vx_0$ to $\vx$, and $B$ is the agent's budget. 
+
+We will primarily consider three different cost functions: \emph{norm-2 cost} (with $c(\vx, \vx_0) = \norm{\vx-\vx_0}_2^2=\sum_i (x_i-x_{i,0})^2$), \emph{quadratic cost} {(with $c(\vx, \vx_0) = \sum_i c_i(x_{i}-x_{0,i})^2$)}, and \emph{weighted Manhattan (taxicab) distance cost} (with $c(\vx, \vx_0)=\vc^T|\vx-\vx_0|=\sum_i c_i(|x_{i}-x_{0,i}|)$). These distance-based cost functions offer a straightforward approach to modeling scenarios where features can be adjusted, and investments in one feature may influence investments in others. They encompass cost functions commonly used in the literature (e.g., \cite{dong2018strategic, ahmadi2021strategic, Perdomo2020performative, Hu2019disparate, Milli2019socialcost}). Our analytical results are presented for the \emph{norm-2 cost}. We also characterize the agent's best-responses under other cost functions to highlight that similar agent behavior can be seen under them; the detailed analysis on cost functions is provided in Appendix~\ref{app:alternative_costs}. 
+
+
+Anticipating the agents' responses, the firm can choose the optimal (non-behavioral) classifier threshold by solving 
+\begin{align}
+(\vtheta_\text{NB}, \theta_{0, \text{NB}}) := \argmin_{(\vtheta, \theta_0)} ~ \E_{\vx\sim\mathcal{D}(\vtheta, \theta_0)}[l(\vx, (\vtheta, \theta_0))],
+\label{eq:NB-firm-U}
+\end{align}
+where $\mathcal{D}(\vtheta, \theta_0)$ is the post-strategic feature distribution of agents responding to classifier $(\vtheta, \theta_0)$, and $l(\cdot)$ is the firm's loss function (e.g., weighted sum of TP and FP costs). \rev{We will assume that this optimization problem has a unique solution.} 
+
+\subsection{Behavioral Responses}
+We extend the above strategic classification model to allow for behavioral responses by agents. Formally, recall that we normalize the feature weight vector $\vtheta=[\theta_1, \theta_2, \ldots, \theta_n]^T$ to have $\sum_i \theta_i=1$. We interpret it as a probability vector, and assume that behaviorally biased agents misperceive $\vtheta$ as $\vw(\vtheta)$, where $\vw(\cdot)$ is a function capturing their biases. As an example, one choice for $\vw(\cdot)$ can be $\evw_j(\vtheta) = p(\sum_{i=1}^j \theta_i)-p(\sum_{i=1}^{j-1} \theta_i)$~\cite{gonzalez1999shape} where $p(z)=\exp(-(-\ln(z))^\gamma)$ is the widely used probability weighting function introduced by \cite{Prelec1998} with $\gamma$ reflecting the intensity of biases. 
+
+Now, a behaviorally biased agent with {pre-strategic} features $\vx_0$ best-responds to classifier $(\vtheta, \theta_0)$ to arrive at the \emph{behavioral post-strategic} features $\vx_{\text{B}}$ by solving:
+\begin{align}\label{eq:agent-optimization-behavioral}
+    &\vx_\text{B} := \argmax_\vx ~ rh(\vx, (\vw(\vtheta), \theta_0))-c(\vx, \vx_0)\notag\\
+    &\text{subject to} \quad c(\vx, \vx_0)\le B
+\end{align}
+Note that the agent now responds to \emph{perceived feature weights} $\vw(\vtheta)$ and classifier $(\vw(\vtheta), \theta_0)$. 
+
+In return, while always accounting for agents' strategic behavior (``gaming''), we assume the firm may or may not be aware that agents have behavioral biases when gaming the system. Specifically, let $\sL(\vtheta', (\vtheta, \theta_{0})):= \E_{\vx\sim\mathcal{D}(\vtheta', \theta_{0})}[l(\vx, (\vtheta, \theta_{0}))]$ denote a firm's expected loss when it implements a classifier $(\vtheta, \theta_{0})$ and agents respond to a (potentially different) classifier $(\vtheta', \theta_{0})$. Then, if a firm is aware of strategic agents' behavioral biases, it selects the threshold 
+\begin{align}(\vtheta_\text{B}, \theta_{0, \text{B}}) := & \argmin_{(\vtheta, \theta_0)} ~ \sL(\vw(\vtheta), (\vtheta, \theta_0))\notag\\
+= &\argmin_{(\vtheta, \theta_0)} ~ \E_{\vx\sim\mathcal{D}(\vw(\vtheta), \theta_{0})}[l(\vx, (\vtheta, \theta_{0}))]
+\label{eq:B-firm-U}
+\end{align}
+and incurs a loss $\sL(\vw(\vtheta_{B}), (\vtheta_{B}, \theta_{0, \text{B}}))$. On the other hand, a firm that assumes agents are fully rational selects the threshold classifier $(\vtheta_\text{NB}, \theta_{0, \text{NB}})$ found by a firm through \eqref{eq:NB-firm-U}, yet incurs the loss $\sL(\vw(\vtheta_\text{NB}), (\vtheta_\text{NB}, \theta_{0, \text{NB}}))$. 
+
+{We note that some other forms of bias may potentially be investigated using small variations of our model. For instance, the misperception of the threshold parameter could be viewed as a variant of the bias model we consider. This is because $\boldsymbol{\theta}^T \boldsymbol{x} = \theta_0' = \alpha \theta_0 = \frac{1}{\alpha}\boldsymbol{\theta}^T \boldsymbol{x} = \boldsymbol{w}(\boldsymbol{\theta})^T\boldsymbol{x}$, which states that a misperception in the threshold can be seen as a transformation of the weight vector, matching the structure of our model.} 
